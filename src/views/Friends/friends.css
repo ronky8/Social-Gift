@@ -1,0 +1,35 @@
+.container > h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
+    margin-bottom: 1rem;
+}
+
+.friends-container {
+}
+
+.search-gallery {
+    margin-top: 1rem;
+
+}
+
+.gallerry {
+    margin-top: 1rem;
+}
+
+.pending {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.pending-req-container, .actual-friends-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+
+.fblock-container {
+
+}

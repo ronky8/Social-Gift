@@ -1,0 +1,27 @@
+.newProduct {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #457b9d;
+    color: #457b9d;
+    font-size: larger;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    .newProduct {
+        width:  350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .newProduct {
+        width:  200px;
+        height: 200px; 
+    }
+}
+

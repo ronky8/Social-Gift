@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.error {
+    color: white;
+    display: flex;
+    padding: 0.5rem;
+
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .page{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #457B9D;
+        width: 100vw;
+        height: 100vh;
+        color: #fff;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .main{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #457B9D;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    
+    .login {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 90%;
+    }
+
+    .signup {
+        font-weight: bolder;
+
+    }
+    
+    .login > input {
+        font-family: 'Boogaloo', cursive;
+        padding: .2em;
+        border-radius: 10px;
+        outline: none;
+        font-size: larger;
+    }
+    
+    .bottom {
+        position: absolute;
+        display: flex;
+        bottom: -15px;
+        height: 30vh;
+        background-color: antiquewhite;
+        width: 100vw;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    
+    .button {
+        color: white;
+        background-color: #1D3557;
+        width: 65%;
+        padding: 0.5em;
+        border-radius: 20px;
+        justify-self: end;
+    }
+
+    .disabled-button {
+        color: white;
+        background-color: gray;
+        width: 65%;
+        padding: 0.5em;
+        border-radius: 20px;
+        justify-self: end;
+    }
+    
+    
+    .title {
+        font-family: 'Pacifico', cursive;
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 1300px) {
+    .page{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: #457B9D;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .title {
+        font-family: 'Pacifico', cursive;
+        margin-bottom: 2rem;
+        color: white;
+        font-size: 60px;
+    }
+
+    .main {
+        display: flex;
+        height: 70%;
+        width: 55%;
+        background-color: #A8DADC;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.435);
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        width: 50%;
+    }
+
+
+    .login > input {
+        width: 80%;
+        padding: 0.4rem;
+        font-family: 'Boogaloo', cursive;
+        border-radius: 10px;
+        font-size: x-large;
+    }
+
+    .sub-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        color: #959595;
+    }
+
+    .sub-container > p {
+        cursor: default;
+    }
+
+    .signup {
+        color: gray;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    .signup:hover {
+        color:#1D3557;
+    }
+
+    .bottom {
+        flex: 1;
+    }
+
+    .button {
+        color: white;
+        background-color: #1D3557;
+        width: 65%;
+        padding: 1em;
+        border-radius: 20px;
+        justify-self: end;
+    }
+
+    .disabled-button {
+        color: white;
+        background-color: gray;
+        width: 65%;
+        padding: 1em;
+        border-radius: 20px;
+        justify-self: end;
+    }
+
+    .button:hover {
+        background-color: #457B9D;
+    }
+
+
+}

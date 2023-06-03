@@ -1,0 +1,183 @@
+ul {
+    list-style-type: none;  
+}
+
+.layout {
+    position: relative;
+}
+
+.stateSelected {
+    background-color: #7a7ad5;
+}
+
+@media screen and (max-width: 800px) {
+
+    .hidden-bg {
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.501);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .navbar {
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: fixed;
+        right: 0;
+        width: 85%;
+        background-color: #457B9D;
+        height: 100vh;
+
+        z-index: 20;
+
+    }
+
+    .activeLayout {
+        visibility: visible;
+    }
+
+    .animateMenu {
+        transform-origin: right ;
+        animation: menuAppear 0.3s ease-in-out 0s 1 normal forwards;
+    }
+
+    @keyframes menuAppear {
+        0% {
+            transform: scaleX(0.1);
+        }
+        100% {
+            transform: scaleX(1);
+            
+        }
+    }
+
+    .item {
+        padding: 1rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .item > img {
+        filter: invert(1);
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: whitesmoke;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .user-names {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .username {
+        color: rgba(128, 128, 128, 0.848);
+        font-size: medium;
+    }
+
+    .bars {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 0;
+
+        cursor: pointer;
+
+    }
+
+}
+
+
+@media screen and (min-width: 800px){
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+    }
+    
+    .navbar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        
+        width: 15%;
+        height: 100vh;
+        background-color: #457B9D;
+        top: 0;
+
+        justify-content: space-between;
+    }
+
+    .bars {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .item {
+        padding: 1rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .item:hover {
+        background-color: #7a7ad5;
+    }
+
+    .item > img {
+        filter: invert(1);
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: whitesmoke;
+        padding: 1rem;
+        cursor: pointer;
+        overflow: hidden;
+        overflow-wrap: break-word;
+
+    }
+
+    .user-names {
+        display: flex;
+        flex-direction: column;
+        font-size: x-small;
+        overflow-wrap: break-word;
+    }
+
+    .username {
+        color: rgba(128, 128, 128, 0.848);
+        font-size: x-small;
+        overflow-wrap: break-word;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: center;
+        margin-left: 15%;
+        min-height: 100vh;
+    }
+}

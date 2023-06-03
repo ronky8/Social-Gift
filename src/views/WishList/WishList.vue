@@ -45,7 +45,6 @@ export default {
         }
       });
 
-      console.log(allWishlist);
     },
     createWishlist(){
       this.$router.push("/wishlist/new");

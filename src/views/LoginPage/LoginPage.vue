@@ -92,7 +92,6 @@ export default {
                 }});
 
                 const { name, last_name, email, image} = userInfoReq.data;
-                console.log(name, last_name, email, image);
                 localStorage.setItem('name', name);
                 localStorage.setItem('last_name', last_name);
                 localStorage.setItem('email', email);
@@ -100,7 +99,6 @@ export default {
                 this.$router.push('/wishlist');
 
             } catch (error) {
-                console.log(error);
             }
             
 

@@ -55,14 +55,12 @@ export default {
             this.newProduct = false
             this.getProduct();
 
-            console.log("getting all wishlist")
             const token = localStorage.getItem('token');
             const allWishlist = await axios.get(`${getUserById}/${localStorage.getItem('id')}/wishlists`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
             });
-            console.log(allWishlist.data)
 
             this.allWishlist = allWishlist.data;
         } else {
@@ -86,7 +84,6 @@ export default {
         async getProduct() {
             const prodReq = await axios.get(`${getProductById}/${this.id}`);
             this.product = prodReq.data;
-            console.log(this.product);
         },
         async deleteProduct() {
             await axios.delete(`${getProductById}/${this.id}`);

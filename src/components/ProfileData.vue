@@ -113,7 +113,6 @@ export default {
             }
             catch (error) {
                 this.error = error;
-                console.log(error);
             }
         },
         logout() {

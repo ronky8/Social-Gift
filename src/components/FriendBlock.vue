@@ -123,7 +123,6 @@ export default {
                 this.friendProp = true;
             } catch (error) {
                 this.error = true;
-                console.log(error);
             }
             this.processing = false;
         },
@@ -140,7 +139,6 @@ export default {
 
             } catch (error) {
                 this.error = true;
-                console.log(error);
             }
         },
         async sendRequestToUser() {

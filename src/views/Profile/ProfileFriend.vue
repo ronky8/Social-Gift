@@ -21,7 +21,6 @@ export default {
         this.id = this.$route.params.id;
         const userReq = await axios.get(`${getUserById}/${this.id}`, { headers: { Authorization: `Bearer ` + localStorage.getItem('token') } });
         this.user = userReq.data;
-        console.log(userReq.data)
     },
     data() {
         return {

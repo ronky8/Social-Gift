@@ -43,7 +43,6 @@ export default {
                 
                 this.$router.push('/wishlist')
             } catch (error) {
-                console.log(error);
             this.submiting = false;
             }
         }

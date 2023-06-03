@@ -47,7 +47,6 @@ export default {
                         Authorization: `Bearer ` + localStorage.getItem('token')
                     }
                 });
-                console.log(res);
                 this.$router.push('/wishlist')
             } catch (error) {
                 this.error = "Error submiting changes";
